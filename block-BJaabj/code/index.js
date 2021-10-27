@@ -1,7 +1,11 @@
 /*
 1. Create a function named `sayHello` that alerts a message `Hello World!`.
 */
+function sayHello() {
+  alert("hello world");
+}
 
+sayHello();
 /*
 2. Create a function named `fullName` with the following steps:
 
@@ -10,6 +14,12 @@
   - Concat the value of fistName and lastName and store it in another variable named `fullName`.
   - Alert `fullName`
 */
+function fullName() {
+  let firstName = prompt("enter the first name");
+  let lastName = prompt("enter last name");
+  let fullName = alert(`the full name is ${firstName + lastName}`);
+}
+fullName();
 
 /*
 3. Create a function named `addTwoNumbers` with the following steps:
@@ -19,7 +29,13 @@
   - Add the value of firstNum and secondNum and store it in another variable named `sum`.
   - Alert `sum`
 */
+function addTwoNumbers() {
+  let firstNum = +prompt("enter the first number");
+  let secondNum = +prompt("enter the second number");
+  let sum = alert(`the sum is ${firstNum + secondNum}`);
+}
 
+addTwoNumbers();
 /*
 4. Create a function named `getTable` with the following steps:
 
@@ -38,14 +54,30 @@
   9 * 9 = 81
   9 * 10 = 90
 */
-
+function getTable() {
+  let num = +prompt("enter the num");
+  for (let i = 1; i <= 10; i++) {
+    let result = i * num;
+    console.log(`${num}*${i}=${result}`);
+  }
+}
+getTable();
 /*
 5. Create a function named `isLeapYear` with the following steps:
 
   - Prompts a message saying `Enter a year` and store the value into variable named`year`
   - Alert `[year] is a leap year` otherwise `[year] is not a leap year`
 */
+function isLeapYear(year) {
 
+
+  if (0 == year % 4) {
+    alert(year + " is a leap year");
+  } else {
+    alert(year + " is not  a leap year");
+  }
+}
+isLeapYear();
 /*
 6. Create a function named `getFactorial` with the following steps:
 
@@ -53,3 +85,14 @@
   - Alert `The factorial of [number] is [factorial]`
 
 */
+function getFactorial() {
+  let num = +prompt("enter a number");
+  let factorial = 1;
+  for(let i=1; i<=num; i++)
+  {
+    factorial = factorial*i;
+  }
+  alert(`the factorial of ${num} is ${factorial}!`)
+
+}
+getFactorial();
