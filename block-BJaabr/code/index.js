@@ -237,8 +237,8 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
-function oddOrEven (a,b) {
-  if(2 == 0) {
+function oddOrEven (num) {
+  if(num %2 === 0) {
     return even;
   } else {
     return odd;
@@ -246,15 +246,40 @@ function oddOrEven (a,b) {
 }
 
 // - Write an anonymous Function Expression
+let oddOrEven = function (num) {
+  if(num %2 === 0) {
+    return even;
+  } else {
+    return odd;
+  } 
+}
 
 // - Write an named Function Expression
+let oddOrEven = function isOdd(num) {
+  if(num %2 === 0) {
+    return even;
+  } else {
+    return odd;
+  } 
+}
 
 // - Write an Arrow Function without curly brackets (hint: use ternary operator)
+let oddOrEven = (num) => num %2 === 0 ? even :odd;
 
 // - Write an Arrow Function with curly brackets
+let oddOrEven = (num) => {
+  if(num %2 === 0) {
+    return even;
+  } else {
+    return odd;
+  } 
+}
 
 // - Execute the function
+oddOrEven(4);
 
 // - Execute the function and store the return value in a variable 
+let add = oddOrEven(8);
 
 // - What is the typeof returnValue
+// the type of value is number
